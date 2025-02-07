@@ -14,14 +14,14 @@ df$first <- factor(df$first, levels = c(0, 1), labels = c("Good", "Bad"))
 df$second <- factor(df$second, levels = c(0, 1), labels = c("Low", "High"))
 df$finaldecision <- factor(df$finaldecision, levels = c(0, 1), labels = c("Low", "High"))
 
-ggplot(df, aes(x=df$first, y=df$bloodp)) +
+ggplot(df, aes(x=first, y=bloodp)) +
   geom_boxplot()
 
 ggplot(df, aes(x=df$second, y=df$bloodp)) +
   geom_boxplot()
 
-ggplot(df, aes(x=df$finaldecision, y=df$bloodp)) +
+ggplot(df, aes(x=finaldecision, y=bloodp)) +
   geom_boxplot()
 
-ggplot(df, aes(x = bloodp)) +
+ggplot(df, aes(x=bloodp)) +
   geom_histogram(binwidth=30, color="black")
