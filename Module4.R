@@ -11,7 +11,7 @@ df <- data.frame(Freq, bloodp, first, second, finaldecision)
 df
 
 df$first <- factor(df$first, levels = c(0, 1), labels = c("Good", "Bad"))
-df$second <- factor(df$second, levels = c(0, 1), labels = c("Low", "High"))
+df$second <- factor(df$second, levels = c(0, 1), labels = c("Good", "Bad"))
 df$finaldecision <- factor(df$finaldecision, levels = c(0, 1), labels = c("Low", "High"))
 
 ggplot(df, aes(x=first, y=bloodp)) +
