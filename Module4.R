@@ -17,7 +17,7 @@ df$finaldecision <- factor(df$finaldecision, levels = c(0, 1), labels = c("Low",
 ggplot(df, aes(x=first, y=bloodp)) +
   geom_boxplot()
 
-ggplot(df, aes(x=df$second, y=df$bloodp)) +
+ggplot(df, aes(x=second, y=bloodp)) +
   geom_boxplot()
 
 ggplot(df, aes(x=finaldecision, y=bloodp)) +
